@@ -1,86 +1,165 @@
-# Hope Haven Animal Shelter Website
+# Mabaso Electrical Services Website
+
+**Module:** WEDE5020 – Web Design and Development
+**Assessment:** Portfolio of Evidence (PoE)
+**Institution:** The Independent Institute of Education (Pty) Ltd
+
+---
 
 ## Student Information
 
-- **Name:** Cifer (Tumel)
-- **Module:** WEDE5020 — Web Design and Development
-- **Assessment:** Portfolio of Evidence (PoE), Part 1 — Building the Foundation
-- **Institution:** The Independent Institute of Education (Pty) Ltd
+| Field | Detail |
+|---|---|
+| Name | Mutshidzi Nesengani |
+| Student number | ST10518407 |
+| Module code | WEDE5020 |
+| Campus | Polokwane |
+| Submission | Part 1 (Parts 2 and 3 to follow) |
+
+---
 
 ## Project Overview
 
-This project is a five-page website built for Hope Haven Animal Shelter, a fictional non-profit organisation based in Polokwane, Limpopo, that rescues, rehabilitates and rehomes abandoned and neglected animals. The site is being developed in three parts across the WEDE5020 module: Part 1 covers project planning and the HTML foundation, Part 2 will add CSS styling and responsive design, and Part 3 will add JavaScript functionality and SEO optimisation.
+Mabaso Electrical Services is a small electrical contracting business that installs, repairs and maintains electrical systems for homes and small commercial clients. The business currently depends on word of mouth and has no online presence, which makes it hard for new customers to find its services, judge its credibility or request a quote.
+
+This project designs and builds a static, multi-page website for the business using HTML, CSS and JavaScript. The site presents the company's services, background and past work in one place and gives visitors a simple way to make an enquiry. It is built mobile-first because most of the business's customers are likely to browse on a phone.
+
+The project is delivered in three parts as a Portfolio of Evidence:
+
+- **Part 1:** Planning, proposal and the HTML structure of the website.
+- **Part 2:** CSS styling and responsive design.
+- **Part 3:** To follow in a future submission.
+
+---
 
 ## Website Goals and Objectives
 
-- Raise awareness of Hope Haven's rescue, rehabilitation and rehoming work.
-- Encourage visitors to adopt an animal, volunteer their time, or sponsor an animal in care.
-- Provide a simple way for the community to enquire, get in touch, or report an animal in distress.
-- Present the organisation as trustworthy, warm and easy to navigate.
+**Goal:** Give Mabaso Electrical Services a professional online presence that builds trust and turns visitors into quote requests.
+
+**Objectives**
+
+1. Explain clearly what services the business offers and where it operates.
+2. Build credibility through an About page and examples of completed work.
+3. Provide a contact page with an enquiry form that validates input before submission.
+4. Make the site usable on phones, tablets and desktops.
+5. Keep navigation consistent so that any page is reachable in one click from any other page.
+6. Use semantic HTML and meaningful alt text so the site is accessible and easy to maintain.
+
+---
 
 ## Key Features and Functionality
 
-- Responsive five-page website: Home, About Us, Adopt (Services), Volunteer/Sponsor Enquiry, and Contact.
-- Consistent header navigation and footer across all pages.
-- Enquiry form (volunteer/sponsor) and a separate contact form, both with client-side validation written in vanilla JavaScript.
-- Embedded map on the Contact page, with two physical locations listed (Polokwane main shelter and Tzaneen satellite clinic).
-- Mobile navigation toggle for smaller screens.
+- **Five linked pages** sharing one header, navigation bar and footer.
+- **Shared stylesheet** (`css/styles.css`) so styling stays consistent across pages.
+- **Mobile navigation toggle** that collapses the menu on small screens.
+- **Services listing** covering the main electrical services offered.
+- **Project gallery** showing example work with descriptive captions.
+- **Contact form with client-side validation** (required fields, email format, phone format) written in JavaScript.
+- **Semantic HTML5 structure** using `header`, `nav`, `main`, `section`, `article` and `footer`.
+- **Responsive layout** that adapts to different screen widths (finalised in Part 2).
+
+---
 
 ## Timeline and Milestones
 
-| Milestone | Target |
-|---|---|
-| Website Project Proposal submitted and approved | Before Part 1 due date |
-| HTML structure for all 5 pages | Part 1 due date |
-| File/folder structure and initial GitHub commit | Part 1 due date |
-| CSS styling and responsive design | Part 2 due date |
-| JavaScript functionality and SEO optimisation | Part 3 due date |
+| Milestone | Description | Status | Date |
+|---|---|---|---|
+| Part 1 | Proposal, sitemap, wireframes and HTML structure | Complete | [Date] |
+| Part 2 | CSS styling and responsive design | In progress / to follow | [Date] |
+| Part 3 | To be confirmed | Not started | [Date] |
+
+---
 
 ## Part 1 Details
 
-Part 1 covers project initiation and planning: selecting the target organisation, drafting and submitting two website project proposals, researching and sourcing content, planning the sitemap and file structure, and building the initial HTML structure for all five pages with basic content, navigation and comments.
+Part 1 covers the planning and structural build of the website.
 
-## Sitemap
+**Deliverables**
 
-```
-Hope Haven Animal Shelter
-│
-├── Home (index.html)
-├── About Us (about.html)
-├── Adopt (services.html)
-├── Volunteer / Sponsor Enquiry (enquiry.html)
-└── Contact (contact.html)
-```
+- Website proposal describing the client, target audience, goals and scope.
+- Sitemap showing how the pages connect.
+- Five HTML pages with a consistent layout.
+- A shared stylesheet with the basic layout and visual identity.
+- JavaScript for the mobile navigation toggle and contact form validation.
+- This README file.
 
-All five pages share the same header navigation and footer, so every page is reachable from every other page.
-
-## File and Folder Structure
+**Folder structure**
 
 ```
-hope-haven/
+mabaso-electrical/
 ├── index.html
 ├── about.html
 ├── services.html
-├── enquiry.html
+├── projects.html
 ├── contact.html
-├── README.md
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── main.js
-└── images/
+├── images/
+└── README.md
 ```
+
+**Page summary**
+
+| Page | File | Purpose |
+|---|---|---|
+| Home | `index.html` | Introduces the business and directs visitors to services and contact |
+| About | `about.html` | Company background, values and credentials |
+| Services | `services.html` | Detailed list of services offered |
+| Projects | `projects.html` | Gallery of completed work |
+| Contact | `contact.html` | Contact details and validated enquiry form |
+
+---
+
+## Sitemap
+
+```
+Home (index.html)
+├── About (about.html)
+├── Services (services.html)
+├── Projects (projects.html)
+└── Contact (contact.html)
+```
+
+Every page links to all other pages through the main navigation bar, and the Home page links directly to Services and Contact through calls to action.
+
+---
 
 ## Changelog
 
-- **v0.1 (Part 1):** Initial project setup. Created file and folder structure. Built HTML structure for all five pages (Home, About, Adopt, Enquiry, Contact) with header, navigation, main content and footer. Added base CSS styling and JavaScript form validation. Set up GitHub repository.
+All notable changes to the website are recorded here, newest first.
+
+### [Unreleased]
+- Part 2 work (CSS styling and responsive design) to be logged here as it is submitted.
+
+### [1.0.0] – Part 1 – [Date]
+**Added**
+- Project proposal and sitemap.
+- Five HTML pages: Home, About, Services, Projects and Contact.
+- Shared stylesheet `css/styles.css`.
+- Mobile navigation toggle.
+- Client-side validation on the contact form.
+- README.md with project documentation.
+
+**Changed**
+- None (first release).
+
+**Fixed**
+- None (first release).
+
+---
 
 ## References
 
-References specific to the Hope Haven Animal Shelter Website Project Proposal are listed within the Website Project Proposal document. General references used to complete Part 1 are listed below in Harvard style, adapted for The IIE.
+Add every source actually used for code, images, text and ideas. The entries below are in the Harvard style and should be checked against the IIE referencing guide and edited to match what you used.
 
-- Mozilla Developer Network (MDN), 2026. *HTML: HyperText Markup Language*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> [Accessed 9 August 2026].
-- Mozilla Developer Network (MDN), 2026. *CSS: Cascading Style Sheets*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS> [Accessed 9 August 2026].
-- Mozilla Developer Network (MDN), 2026. *Client-side form validation*. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation> [Accessed 9 August 2026].
-- W3Schools, 2026. *HTML Forms*. [online] Available at: <https://www.w3schools.com/html/html_forms.asp> [Accessed 9 August 2026].
-- The Independent Institute of Education (Pty) Ltd, 2026. *WEDE5020: Web Design and Development, Module Guide.*
+Mozilla Developer Network (MDN), n.d. *HTML: HyperText Markup Language*. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed 15 October 2026].
+
+Mozilla Developer Network (MDN), n.d. *CSS: Cascading Style Sheets*. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 15 October 2026].
+
+Mozilla Developer Network (MDN), n.d. *JavaScript*. [Online] Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript [Accessed 15 October 2026].
+
+WHATWG, n.d. *HTML Living Standard*. [Online] Available at: https://html.spec.whatwg.org/ [Accessed 15 October 2026].
+
+The Independent Institute of Education, 2026. *WEDE5020 Portfolio of Evidence brief*. Unpublished module document.
